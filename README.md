@@ -2,6 +2,12 @@
 
 **Only use this exploit on systems you own or have explicit rights to test**
 
+## Installation
+
+If you have go already installed on your computer, go get is the way to go
+
+`go get github.com/Greynad/struts2-jakarta-inject`
+
 ## Usage
 
 Single command execution
