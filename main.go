@@ -28,7 +28,7 @@ func main() {
 
 	cmdOutput, err := exploit(*urlPtr, *cmdPtr)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, err.Error())
+		fmt.Fprintf(os.Stderr, "%v\n", err)
 	}
 
 	fmt.Print(cmdOutput)
@@ -68,7 +68,7 @@ func shell(url string) {
 
 		cmdOutput, err := exploit(url, strings.TrimRight(text, "\r\n"))
 		if err != nil {
-			fmt.Fprintf(os.Stderr, err.Error())
+			fmt.Fprintf(os.Stderr, "%v\n", err)
 			os.Exit(1)
 		}
 
